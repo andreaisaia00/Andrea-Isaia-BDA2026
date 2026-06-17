@@ -35,7 +35,7 @@ st.divider()
 st.subheader("Top 3 traded symbols by transaction count")
 df_top3 = top3(start,end,df)
 
-# Creating th chart with matplotlib
+# Creating th chart with matplotlib.
 fig1, ax1 = plt.subplots(figsize=(10,6))
 
 ax1.barh(df_top3.index,df_top3["n_transactions"])
@@ -52,7 +52,7 @@ st.divider()
 st.subheader("Top 5 sectors by transaction count")
 df_top5_sector = top5_sector(start,end,df)
 
-# Creating th chart with matplotlib
+# Creating th chart with matplotlib.
 fig2, ax2 = plt.subplots(figsize=(10,6))
 
 ax2.barh(df_top5_sector.index,df_top5_sector["n_transactions"])
@@ -70,7 +70,7 @@ st.divider()
 st.subheader("Top 5 industries by transaction count")
 df_top5_industry = top5_industry(start,end,df)
 
-# Creating th chart with matplotlib
+# Creating th chart with matplotlib.
 fig3, ax3 = plt.subplots(figsize=(10,6))
 
 ax3.barh(df_top5_industry.index,df_top5_industry["n_transactions"])
